@@ -1,2 +1,0 @@
-# JustDoIt
-Project-FRONT-END
