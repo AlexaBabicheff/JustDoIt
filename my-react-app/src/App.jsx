@@ -1,6 +1,7 @@
+import React from 'react';
 import './App.css';
-import {Navigation} from './components/Navigation/Navigation'
-import {HeaderBanner} from './components/HeaderBanner/HeaderBanner'
+import Navigation from './components/Navigation/Navigation'
+import HeaderBanner from './components/HeaderBanner/HeaderBanner'
 import {Categories} from './components/Categories/Categories'
 import {DiscountCard}  from './components/DiscountCard/Discount'
 import {Sale} from './components/Sale/Sale'
