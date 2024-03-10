@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+  }
+  
+  .saleContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1360px;
+    height: 532px;
+    gap: 40px;
+  }
+  
+  p{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+  }
+  
+  .line hr {
+    border: 1px solid #DDDDDD;
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .saleButton button {
+    background-color: white;
+    width: auto;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  button a{
+    text-decoration: none;
+    color: #DDDDDD; 
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .saleButton button:hover {
+    background-color: #1f1f1f;
+  }
+  
+  .saleContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 5%;
+  }
+  
+  .saleCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1360px;
+    height: 532px;
+    margin-left: 5%;
+  }
+  
+  .saleCard {
+    max-width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .saleCard img{
+    max-width: 100%;
+    height: auto;
+    border: 0px, 0px, 1px, 0px;
+  }
+  .discountLabel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    max-width: 63px;
+    height: auto;
+    background-color: #F26D22;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .description{
+    margin:5px;
+  }
+  
+  .title{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 32px;
+  }
+  .priceInfo{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px
+  }
+  
+  .price{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    font-style: 'bold';
+  }
+  .dicountPrice{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    color: #8B8B8B;
+    position: relative;
+    top: 0.5em;
+  }
+  
+  .dicountPrice::after {
+    content: '';
+    position: absolute;
+    bottom: 55%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #8B8B8B; 
+    transform: translateY(50%);
+  }
