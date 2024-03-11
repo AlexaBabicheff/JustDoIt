@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import logoImg from "./HeaderImg/logo (1).svg";
 import iconImg from "./HeaderImg/icons.png";
+
 // import { NavLink } from "react-router-dom";
 // import classes from "./Navigation.module.css";
 // import heart from "../Navigation/NavImg/heart.png";
