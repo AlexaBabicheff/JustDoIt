@@ -4,7 +4,6 @@ import logoImg from "./HeaderImg/logo.svg";
 import iconImg from "./HeaderImg/icons.png";
 import { NavLink } from "react-router-dom";
 
-
 const Header = () => {
   return (
     <header className={styles}>
