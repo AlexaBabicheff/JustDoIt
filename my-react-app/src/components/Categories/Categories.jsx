@@ -41,6 +41,7 @@ import classes from "./Categories.module.css";
         ))}
       </div>
 
+
       {/* --- */}
       <div className={classes.categoriesCardsContainerText}>
         {categories.slice(0, 4).map((category) => (
