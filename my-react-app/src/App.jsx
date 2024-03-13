@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <> 
       <Header />
-      <Banner />
+      {/* <Banner /> */}
       <Outlet/>
     
     {/* 
