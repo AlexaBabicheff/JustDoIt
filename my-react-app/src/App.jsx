@@ -14,12 +14,12 @@ export const App = () => {
       <Header />
       <Banner />
     
-    {/* 
+{/*     
     //   <Categories />
-    //   <DiscountCard />
-    //   <Sale />
-    //   <Contact />
-    //   <Map /> */}
+    //   <DiscountCard /> */}
+      <Sale />
+    {/* //   <Contact />
+    //   <Map />  */}
     </>
   );
 }
