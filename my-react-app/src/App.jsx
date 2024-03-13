@@ -10,13 +10,13 @@ import {Map} from './components/Map/Map'
 export const App = () => {
   return (
     <>
-      <Navigation />
+      {/* <Navigation />
       <HeaderBanner />
       <Categories />
-      <DiscountCard />
+      <DiscountCard /> */}
       <Sale />
-      <Contact />
-      <Map />
+      {/* <Contact />
+      <Map /> */}
     </>
   );
   }
