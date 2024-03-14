@@ -5,6 +5,7 @@
   }
   
   .saleContainer {
+    margin-top: 800px;
     display: flex;
     flex-direction: column;
     max-width: 1360px;
