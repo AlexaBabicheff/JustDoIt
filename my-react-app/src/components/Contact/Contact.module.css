@@ -1,4 +1,4 @@
-/* .wrapper {
+.wrapper {
     color: #000;
     margin-top: 5%;
 }
@@ -264,4 +264,11 @@
         width: 60%;
     }
 
-    .workingTime { */
+    .workingTime {
+        font-size: 1.5rem;
+    }
+
+    .hours {
+        font-size: 1.5rem;
+    }
+}

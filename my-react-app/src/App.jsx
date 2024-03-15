@@ -5,7 +5,7 @@ import Banner from './components/Banner/Banner'
 import {Categories} from './components/Categories/Categories'
 import {DiscountCard}  from './components/DiscountCard/Discount'
 import {Sale} from './components/Sale/Sale'
-import {Contact} from './components/Contact/Contact'
+import Contact from './components/Contact/Contact'
 import {Map} from './components/Map/Map'
 
 export const App = () => {
@@ -16,8 +16,8 @@ export const App = () => {
 {/*   <Categories />
       <DiscountCard /> */}
       <Sale />
-{/*   <Contact />
-      <Map />  */}
+  <Contact />
+      <Map /> 
     </>
   );
   }
