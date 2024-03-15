@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import classes from './Sale.module.css';
 
-export const Sale = () => {
+const Sale = () => {
     const [products, setProducts] = useState([]);
     
 
@@ -49,3 +49,5 @@ export const Sale = () => {
         </div>
     );
 }
+
+export default Sale;
