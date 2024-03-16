@@ -1,6 +1,6 @@
 import React from "react";
-import banner from "../Banner/BannerImg/banner.svg";
-import styles from "../Banner/Banner.module.css";
+import banner from "../HeaderBanner/BannerImg/banner.svg";
+import styles from "../HeaderBanner/Banner.module.css";
 
 const Banner = () => {
   return (
