@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BurgerMenu.module.css';
+import './BurgerMenu.module.css';
 
 const BurgerMenu = () => {
   return (
