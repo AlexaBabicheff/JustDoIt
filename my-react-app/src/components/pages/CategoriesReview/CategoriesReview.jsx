@@ -1,10 +1,16 @@
+import Navigation from "../../Navigation/Navigation";
 import Categories from "../../Categories/Categories";
-import styles from "./CategoriesReview.css"
+import Section from "../../Section/Section";
+import Map from "../../Map/Map";
+import "./CategoriesReview.css";
 
 export const CategoriesReview = () => {
   return (
     <div className="pageBody">
-      <Categories />
+      <Navigation />
+      <Categories showAllCategories={true} />
+      <Section />
+      <Map />
     </div>
   );
 };
