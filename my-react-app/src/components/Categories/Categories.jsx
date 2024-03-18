@@ -19,37 +19,29 @@ const Categories = ({ showAllCategories }) => {
         <div>
           <p>Categories</p>
         </div>
-        <div className={classes.line}><hr /></div>
-        <div className={classes.categoriesButton}>
-          <button><a href="#">All categories</a></button>
-        </div>
+        {/* Скрываем <hr> и кнопку "All categories", если showAllCategories равно false */}
+        {!showAllCategories && (
+          <>
+            <div className={classes.line}><hr /></div>
+            <div className={classes.categoriesButton}>
+              <button><a href="#">All categories</a></button>
+            </div>
+          </>
+        )}
       </div>
       <div className={classes.categoriesCardsContainer}>
-        {showAllCategories
-          ? categories.map((category) => (
-              <div
-                key={category.id}
-                className={classes.categoriesCard}
-                style={{ position: "relative", overflow: "hidden" }}
-              >
-                <img src={"http://127.0.0.1:3333" + category.image} alt={category.title} />
-                <div className={classes.description}>
-                  <div className={classes.title}>{category.title}</div>
-                </div>
-              </div>
-            ))
-          : categories.slice(0, 4).map((category) => (
-              <div
-                key={category.id}
-                className={classes.categoriesCard}
-                style={{ position: "relative", overflow: "hidden" }}
-              >
-                <img src={"http://127.0.0.1:3333" + category.image} alt={category.title} />
-                <div className={classes.description}>
-                  <div className={classes.title}>{category.title}</div>
-                </div>
-              </div>
-            ))}
+        {categories.map((category) => (
+          <div
+            key={category.id}
+            className={classes.categoriesCard}
+            style={{ position: "relative", overflow: "hidden" }}
+          >
+            <img src={"http://127.0.0.1:3333" + category.image} alt={category.title} />
+            <div className={classes.description}>
+              <div className={classes.title}>{category.title}</div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
