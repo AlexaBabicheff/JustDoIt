@@ -19,7 +19,6 @@ const Categories = ({ showAllCategories }) => {
         <div>
           <p>Categories</p>
         </div>
-        {/* Скрываем <hr> и кнопку "All categories", если showAllCategories равно false */}
         {!showAllCategories && (
           <>
             <div className={classes.line}><hr /></div>
