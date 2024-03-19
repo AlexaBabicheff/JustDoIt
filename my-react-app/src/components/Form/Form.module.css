@@ -1,0 +1,79 @@
+/* .container { */
+    main {
+        position: relative;
+        padding-top: 400px;
+      }
+      
+      .content {
+        display: flex;
+        margin: 800px 20px;
+        padding-left: 30px;
+        width: 1360px;
+        height: 500px;
+        background-color: #87933d;
+        border-radius: 10px;
+      }
+      
+       h2 {
+        position: absolute;
+        font-size: 64px;
+        color: #fffff1;
+        font-weight: 700;
+        padding-top: 830px;
+        padding-left: 330px;
+      }
+      
+      .content > img {
+        top: 1362px;
+        position: absolute;
+        padding-left: 30px;
+        width: 700px;
+        /* padding-top: 250px; */
+      }
+      
+      .form {
+        justify-content: right;
+        position: absolute;
+        bottom: 160px;
+        left: 800px;
+        gap: 20px;
+      }
+      
+      form > button {
+        /* padding-right: 130px; */
+        width: 500px;
+        height: 58px;
+        border: 2px solid #fffff1;
+        border-radius: 7px;
+        background-color: #fffff1;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(69, 62, 62);
+      }
+      
+      .btn {
+        top: 220px;
+        right: 130px;
+        /* padding-right: 40px; */
+        /* padding-top: 140px; */
+      }
+      
+      input {
+        display: flex;
+        /* width: 600px; */
+        /* gap: 20px; */
+      }
+      
+      .firstName,
+      .phoneNumber,
+      .email {
+        width: 518px;
+        height: 70px;
+        border: 2px solid #fffff1;
+        border-radius: 7px;
+        background-color: #87933d;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fffff1;
+        gap: 20px;
+      }

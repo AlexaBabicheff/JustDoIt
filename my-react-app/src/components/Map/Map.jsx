@@ -1,18 +1,10 @@
-// import React from "react";
-// import Section from "../Section/Section.jsx";
-// import css from "./Map.module.css";
+import React from 'react';
 
-// export  function Map() {
-//   return (
-//     <Section>
-//       <iframe
-//         className={css.map}
-//         title="address"
-//         src="https://maps.google.com/maps?q=Linkstraße 2/8 Etage, 10785 Berlin&t=&z=15&ie=UTF8&iwloc=&output=embed"
-//         width="100%"
-//         loading="lazy"
-//         referrerPolicy="no-referrer-when-downgrade"
-//       ></iframe>
-//     </Section>
-//   );
-// }
+const Map = () => (
+  <div className="map">
+    <h2>Our Location</h2>
+    <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.9876543!3d40.7412345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDUwJzA3LjIiTiA3M8KwMTknMjMuMyJX!5e0!3m2!1sen!2sus!4v1624512345678!5m2!1sen!2sus" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
+  </div>
+);
+
+export default Map;
