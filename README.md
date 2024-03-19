@@ -19,4 +19,4 @@ import { CategoriesReview } from './components/pages/CategoriesReview/Categories
 import SaleGoods from './components/pages/SaleGoods/SaleGoods';
 import OneProduct from './components/pages/OneProduct/OneProduct';
 import NotFound from './components/pages/NotFound/NotFound';
-import './App.css'; 
+
