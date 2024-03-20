@@ -10,11 +10,11 @@ const Form = ({ handleAddUser }) => {
     reset,
     getValues,
   } = useForm({
-    defaultValues: {
-      firstName: 'Name',
-      phoneNumber: 'Phone number',
-      email: 'Email'
-    },
+    // defaultValues: {
+    //   firstName: '',
+    //   phoneNumber: 'Phone number',
+    //   email: 'Email'
+    // },
   })
 
   const handleUserSubmit = (data) => {
@@ -24,8 +24,7 @@ const Form = ({ handleAddUser }) => {
   console.log(getValues()) 
   return (
     <main>
-     {/* <div className='container'> */}
-      <h2>5% off on the first order</h2>
+     <h2>5% off on the first order</h2>
       <div className={classes.content}>
       < img src={discount} alt="" />
       </div>
@@ -40,7 +39,7 @@ const Form = ({ handleAddUser }) => {
             minLength: { value: 4, message: 'Имя должно быть длинее 3 символов' },
             maxLength: { value: 10, message: 'Имя должно быть короче 10 символов' },
           })}
-          className={classes.firstName}
+          className={classes.firstName} placeholder='     Name'
         />
       </label>
       <p style={{ color: 'red' }}>{errors.firstName?.message}</p>
@@ -55,7 +54,7 @@ const Form = ({ handleAddUser }) => {
               message: 'Введите пожалуйста немецкий номер',
             },
           })}
-          className={classes.phoneNumber}
+          className={classes.phoneNumber} placeholder='     Phone number'
         />
       </label>
       <p style={{ color: 'red' }}>{errors.phone?.message}</p>
@@ -70,7 +69,7 @@ const Form = ({ handleAddUser }) => {
               message: 'Неправильно введен имейл, добавьте точку и домен',
             },
           })}
-          className={classes.email}
+          className={classes.email} placeholder='     Email'
         />
       </label>
       <p style={{ color: 'red' }}>{errors.email?.message}</p>

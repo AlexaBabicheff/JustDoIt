@@ -1,24 +1,23 @@
  import React from 'react';
- import HeaderBanner from '../../HeaderBanner/Banner';
  import Navigation from '../../Navigation/Navigation';
+ import HeaderBanner from '../../HeaderBanner/Banner';
  import Categories from '../../Categories/Categories';
- import DiscountCard from '../../DiscountCard/Discount';
+ import Form from '../../Form/Form';
  import Sale from '../../Sale/Sale';
  import Contact from '../../Contact/Contact';
  import Map from '../../Map/Map';
- import Form from '../../Form/Form';
+ 
 
-const HomePage = () => (
+const MainPage = () => (
   <div className="pageBody">
     <Navigation />
     <HeaderBanner />
     <Categories />
-    <DiscountCard />
-    <Sale />
     <Form />
+    <Sale />
     <Contact />
     <Map />
   </div>
 );
-
-export default HomePage;
+  
+export default MainPage

@@ -12,7 +12,8 @@
   @media (min-width: 768px) {
     body {
       font-size: 16px;
-      background-color: blue;
+      background: #fffff1
+      /* background-color: blue; */
     }}
   
   /* 480px - 767px */

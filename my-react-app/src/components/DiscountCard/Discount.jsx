@@ -2,7 +2,7 @@ import React from 'react';
 
 const DiscountCard = () => (
   <div className="discount-card">
-    <h2>DiscountCard</h2>
+    {/* <h2>DiscountCard</h2> */}
   </div>
 );
 

@@ -5,10 +5,17 @@
     font-family: 'Montserrat', serif;
   }
   
+  banner{
+    max-width: 100%;
+  }
   .banner_img {
   z-index: 1;
   }
   
+  img{
+    right: 60px;
+  }
+
   banner {
   position: relative;
   top: -15px;
