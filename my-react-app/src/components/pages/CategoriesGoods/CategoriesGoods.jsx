@@ -6,7 +6,7 @@ import Map from "../../Map/Map";
 
 const CategoriesGoods = () => {
   return (
-    <div>
+    <div className="CategoriesGoodsContainer">
       <Navigation />
       <CategoryProducts />
       <Section />
