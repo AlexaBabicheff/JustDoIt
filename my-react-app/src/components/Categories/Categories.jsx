@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "../Categories/Categories.module.css";
+import { serverUrl } from '../../Config';
 
 const Categories = ({ showAllCategories }) => {
   const [categories, setCategories] = useState([]);
 
+  const categoriesURL = `${serverUrl}categories/all`;
   useEffect(() => {
-    fetch(`http://127.0.0.1:3333/categories/all`)
+    fetch(categoriesURL)
       .then((response) => response.json())
       .then((data) => {
         setCategories(data);
