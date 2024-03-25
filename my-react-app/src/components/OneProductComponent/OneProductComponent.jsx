@@ -8,11 +8,13 @@ const OneProductComponent = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const oneProduct = `${serverUrl}/products/${id}` 
+        const oneProduct = `${serverUrl}products/${id}`
+        console.log(oneProduct);
         fetch(oneProduct)
             .then((response) => response.json())
             .then((data) => {
-                setProduct(data.data);
+                console.log(data);
+                setProduct(data[0]);
             }) 
             .catch((error) => console.error(error));
     }, [id]);
@@ -20,6 +22,8 @@ const OneProductComponent = () => {
     if (!product) {
         return <div>Loading...</div>;
     }
+
+    console.log(product.data)
 
     return (
         <div className={classes.OneProductContainer}>
