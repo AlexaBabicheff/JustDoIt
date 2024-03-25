@@ -6,7 +6,7 @@ const Categories = ({ showAllCategories }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3333/categories/all")
+    fetch(`http://127.0.0.1:3333/categories/all`)
       .then((response) => response.json())
       .then((data) => {
         setCategories(data);

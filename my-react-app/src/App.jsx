@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/pages/HomePage/HomePage';
 import AllGoods from './components/pages/AllGoods/AllGoods';
 import Bag from './components/pages/Bag/Bag';
@@ -11,6 +11,7 @@ import OneProduct from './components/pages/OneProduct/OneProduct';
 import NotFound from './components/pages/NotFound/NotFound';
 import Categories from './components/Categories/Categories';
 import CategoryProducts from './components/CategoryProducts/CategoryProducts';
+import OneProductComponent from './components/OneProductComponent/OneProductComponent';
 import './App.css';
 
 function App() {
@@ -25,10 +26,11 @@ function App() {
           <Route path="/categories-review" element={<CategoriesReview />} />
           <Route path="/sale-goods" element={<SaleGoods />} />
           <Route path="/all-goods" element={<AllGoods />} />
-          <Route path="/one-product" element={<OneProduct />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/one-product-component/:id" element={<OneProductComponent />} />
+          <Route path="/one-product/:id" element={<OneProduct />} />
           <Route path="/categories/:categoryId" element={<CategoryProducts />} />
           <Route path="/categories" element={<Categories />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>
