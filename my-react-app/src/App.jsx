@@ -12,6 +12,7 @@ import NotFound from './components/pages/NotFound/NotFound';
 import Categories from './components/Categories/Categories';
 import CategoryProducts from './components/CategoryProducts/CategoryProducts';
 import OneProductComponent from './components/OneProductComponent/OneProductComponent';
+import FiltersPanel from './components/Filter/FiltersPanel';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/bag" element={<Bag />} />
           <Route path="/burger-menu" element={<BurgerMenu />} />
+          <Route path='/filters-panel' element={<FiltersPanel />} />
           <Route path="/categories-goods/:categoryId" element={<CategoriesGoods />} />
           <Route path="/categories-review" element={<CategoriesReview />} />
           <Route path="/sale-goods" element={<SaleGoods />} />
