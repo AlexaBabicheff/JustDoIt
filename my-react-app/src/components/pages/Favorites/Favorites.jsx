@@ -3,11 +3,11 @@ import HeaderBanner from '../../HeaderBanner/Banner';
 import Navigation from '../../Navigation/Navigation';
 import Categories from '../../Categories/Categories';
 import DiscountCard from '../../DiscountCard/Discount';
-import Sale from '../../Sale/Sale';
+// import Sale from '../../Sale/Sale';
 import Contact from '../../Contact/Contact';
 import Map from '../../Map/Map';
 
-const AllGoods = () => (
+const SaleGoods = () => (
   <div className="pageBody">
     <Navigation />
     <HeaderBanner />
@@ -19,4 +19,4 @@ const AllGoods = () => (
   </div>
 );
 
-export default AllGoods;
+export default SaleGoods;

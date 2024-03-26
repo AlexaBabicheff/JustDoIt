@@ -1,11 +1,12 @@
-import React from "react";
-import banner from "../HeaderBanner/BannerImg/banner.svg";
-import styles from "../HeaderBanner/Banner.module.css";
+import React from 'react';
+import banner from '../HeaderBanner/BannerImg/banner.svg';
+import styles from '../HeaderBanner/Banner.module.css';
+
 
 const Banner = () => {
   return (
     <>
-      <banner className={styles}>
+      <banner className={styles.pageBody}>
         <div className="text">
           <h1>
             Amazing Discounts

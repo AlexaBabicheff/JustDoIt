@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map{
+    position: relative;
+    /* width: 1360px; */
+    width: 1000px;
+    left: 90px;
+    top: 105px;
+}
+
+.location{
+    /* position: absolute; */
+    top: 200px;
+    /* padding-left: 25px; */
+    padding-top: 50px;
+    top: 20px;
+}
+
+.map img{
+    width: 1200px;
+    height: 370px;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+    .map{
+        margin-left: 3px;
+     }
+     .map img{
+         width: 1155px;
+         height: 350px;
+     }
+}

@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: none;
@@ -8,45 +8,38 @@
 .saleContainer {
   display: flex;
   flex-direction: column;
-  width: 1360px;
-  height: 600px;
-  gap: 40px;
-  top: 1900px;
-  /* Anna */
-  position: absolute;
+  max-width: 100%;
+  gap: 20px;
 }
 
-p{
-  position: absolute;
+h7 {
+  margin-left: 30px;
   font-weight: 700;
   font-size: 64px;
 }
 
 .line hr {
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   width: 1000px;
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .saleButton button {
-  position: absolute;
-top: 95px;
-left: 1115px;
-background-color: white;
-width: 170px;
-height: 36px;
-border: 1px solid #dddddd;
-gap: 10px;
-border-radius: 4px;
-cursor: pointer;
-text-align: center;
+  top: 40px;
+  left: 1070px;
+  background-color: white;
+  width: 170px;
+  height: 36px;
+  border: 1px solid #dddddd;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
 }
 
-button a{
+button a {
   text-decoration: none;
-  color: #DDDDDD; 
+  color: #dddddd;
   font-weight: 500;
   font-size: 16px;
 }
@@ -54,7 +47,6 @@ button a{
 .saleButton button:hover {
   background-color: #1f1f1f;
 }
-
 
 .saleContainerHeader {
   display: flex;
@@ -64,80 +56,109 @@ button a{
   padding: 10px;
   margin-left: 5%;
 }
-
 .saleCardsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1400px;
-  height: 600px;
-  margin-left: 5%;
+  width: 1200px;
+  height: 450px;
+  margin-left: 8%;
 }
-
 .saleCard {
   width: 290px;
   margin-bottom: 20px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.saleCard img{
+.saleCard img {
   max-width: 100%;
   height: auto;
   border: 0px, 0px, 1px, 0px;
 }
 .discountLabel {
   position: absolute;
-  top: 5px;
+  top: 35px;
   right: 5px;
   max-width: 63px;
   height: auto;
-  background-color: #F26D22;
+  background-color: #f26d22;
   color: white;
   padding: 4px 8px 4px 8px;
   border-radius: 5px;
   z-index: 1;
 }
-.description{
-  margin:5px;
+.description {
+  margin: 5px;
+  /* padding-bottom: 80px; */
 }
 
-.title{
-  font-family: 'Montserrat';
+.title {
   font-weight: 500;
   font-size: 20px;
-  margin-top: 310px;
+  /* margin-top: 310px; */
 }
-.priceInfo{
+.priceInfo {
   display: flex;
   align-items: center;
   margin-top: 15px;
   gap: 15px;
 }
-
-.price{
-  font-family: 'Montserrat';
+.price {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 40px;
-  font-style: 'bold';
+  font-style: "bold";
 }
-.dicountPrice{
-  font-family: 'Montserrat';
+.dicountPrice {
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
-  color: #8B8B8B;
+  color: #8b8b8b;
   position: relative;
   top: 5px;
 }
 
 .dicountPrice::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 55%;
+  /* bottom: 55%; */
   left: 0;
   right: 0;
-  border-bottom: 1px solid #8B8B8B; 
+  border-bottom: 1px solid #8b8b8b;
   transform: translateY(50%);
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+  .saleContainer {
+    width: 50%;
+    margin-left: -20px;
+  }
+  .line hr {
+    width: 630px;
+  /* margin-top: 30px; */
+    margin-left: 10px;
+  }
+  p {
+    padding-left: 10px;
+  }
+  .saleButton button {
+    left: 800px;
+  }
+  .saleContainerHeader {
+    left: 30px;
+  }
+  .saleCard {
+    width: 270px;
+    margin-bottom: 90px;
+  }
+  .saleCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    /* position: relative; */
+    margin-left: 50px;
+  }
 }

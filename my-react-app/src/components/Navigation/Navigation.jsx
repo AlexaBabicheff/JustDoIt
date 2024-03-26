@@ -1,50 +1,55 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import logoImg from "./HeaderImg/logo.svg";
-import iconImg from "./HeaderImg/icons.png";
-import BtnDarkMode from './btnDarkMode/BtnDarkMode';
-// import { NavLink } from "react-router-dom";
+import iconHeart from "./HeaderImg/heart.svg";
+import iconBag from "./HeaderImg/icons.png";
+import BtnDarkMode from "./btnDarkMode/BtnDarkMode";
+import { NavLink } from "react-router-dom";
 
-
-const Header = () => {
+const Navigation = () => {
   return (
     <header className={styles}>
-      <div className="discount">
-            <button1>1 day discount!</button1>
-          </div>
+      {/* <div className="discount"> */}
+      <button1>1 day discount!</button1>
+      {/* </div> */}
+
+      {/* <div className="header_logo"> */}
+      <div className="logo&toggle">
+        <img id="lg" src={logoImg} alt="Logo" />
+      </div>
+      <div className="dark&light">
+        <BtnDarkMode />
+      </div>
+
       <nav className="header__nav">
         <ul>
-          <div className="logo">
-            <img src={logoImg} alt="Logo" />
-          </div>
-          <BtnDarkMode />
-          <li>
-            <a href="#!">Main Page</a>
-          </li>
-          <li>
-            <a href="#!">Categories</a>
-          </li>
-          <li>
-            <a href="#!">All products</a>
-          </li>
-          <li>
-            <a href="#!"></a>All sales
-          </li>
-<li className="burger">☰</li>
-           <div className="header__icon">
-             <img src={iconImg} alt="Icon" />
-          </div>
-         </ul>
-       </nav>
-     </header>
-   );
- };
- export default Header;
+          {/* <li><NavLink to="/">Main Page</NavLink></li>
+          <li><NavLink to="/categories-goods">Categories</NavLink></li>
+          <li><NavLink to="/all_products">All products</NavLink></li>
+          <li><NavLink to="/all_sales">All sales</NavLink></li> */}
 
-// import React from 'react';
-// import { NavLink } from 'react-router-dom';
+          <li><NavLink to="/">Main Page</NavLink></li>
+          <li><NavLink to="/categories-review">Categories</NavLink></li>
+          <li><NavLink to="/all_products">All products</NavLink></li>
+          
+          <li><NavLink to="/all_sales">All sales</NavLink></li>
 
-// const Navigation = () => (
+          {/* <li className="burger">☰</li> */}
+        </ul>
+      </nav>
+
+      <div className="header_icons">
+        <div className="iconHeart">
+          <img src={iconHeart} alt="Icon" />
+          <img src={iconBag} alt="Icon" />
+        </div>
+      </div>
+      {/* </div> */}
+    </header>
+  );
+};
+//  export default Header;
+
 //   <nav className="navigation">
 //     <ul>
 //       <li><NavLink to="/">Home</NavLink></li>
@@ -58,4 +63,4 @@ const Header = () => {
 //   </nav>
 // );
 
-// export default Navigation;
+export default Navigation;
