@@ -13,7 +13,7 @@ const SaleGoods = () => (
     <HeaderBanner />
     <Categories />
     <DiscountCard />
-    <Sale />
+    {/* <Sale /> */}
     <Contact />
     <Map />
   </div>

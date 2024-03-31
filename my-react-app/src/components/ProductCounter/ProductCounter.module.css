@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.ProductCounterContainer{
+    justify-content: space-between;
+    max-width: 200px;
+    border: 1px, 0px, 1px, 0px;
+
+}
+
+.ProductCounterContainer button{
+    background-color: #ffff;
+    color: grey;
+    border-color: grey;
+    border: 1px;
+    max-width: 58px;
+    
+}
