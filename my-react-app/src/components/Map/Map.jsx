@@ -1,4 +1,5 @@
 import React from 'react';
+
 import css from "./Map.module.css";
 import location from '../Map/img/map.png'
 
@@ -10,6 +11,7 @@ const Map = () => (
     <img  src={location} alt="Logo" />
     {/* </div> */}
     
+
   </div>
 );
 

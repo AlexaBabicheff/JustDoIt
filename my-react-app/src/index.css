@@ -1,9 +1,11 @@
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-size: normal;
 }
+
 .container{
   margin: 0;
   padding: 0;
@@ -60,6 +62,7 @@
   
   /* 480px - 767px */
   @media only screen and (min-width: 481px) and (max-width: 768px) {
+
     body {
       font-size: 14px;
       background-color: rosybrown;
@@ -71,7 +74,7 @@
       font-size: 12px; 
       background-color: blueviolet;
     }}
-  
+
 
  /*  1001px - 1440px */
   /* @media (min-width: 1440px) {
@@ -120,13 +123,14 @@
         background-color: aquamarine; */
         /* burger-menu */
       /* }} */
-  
+ 
 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 /* p{
   left: 50px;
@@ -168,3 +172,4 @@ code {
     font-size: 10px;
     background-color: aquamarine; */
   /* }} */
+

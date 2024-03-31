@@ -1,3 +1,4 @@
+
 import React from "react";
 import styles from "./Navigation.module.css";
 import logoImg from "./HeaderImg/logo.svg";
@@ -48,19 +49,6 @@ const Navigation = () => {
     </header>
   );
 };
-//  export default Header;
-
-//   <nav className="navigation">
-//     <ul>
-//       <li><NavLink to="/">Home</NavLink></li>
-//       <li><NavLink to="/all-goods">All Goods</NavLink></li>
-//       <li><NavLink to="/categories-goods">Categories</NavLink></li>
-//       <li><NavLink to="/sale-goods">Sale</NavLink></li>
-//       <li><NavLink to="/bag">Bag</NavLink></li>
-//       <li><NavLink to="/contact">Contact</NavLink></li>
-//       <li className="burger">☰</li>
-//     </ul>
-//   </nav>
-// );
 
 export default Navigation;
+

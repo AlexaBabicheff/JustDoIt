@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
 import classes from './Form.module.css'
+
 import discount from './img/image.svg'
 
 const Form = ({ handleAddUser }) => {
@@ -10,11 +11,12 @@ const Form = ({ handleAddUser }) => {
     reset,
     getValues,
   } = useForm({
-    // defaultValues: {
-    //   firstName: '',
-    //   phoneNumber: 'Phone number',
-    //   email: 'Email'
-    // },
+   
+    defaultValues: {
+      firstName: 'Name',
+      phoneNumber: 'Phone number',
+      email: 'Email'
+    },
   })
 
   const handleUserSubmit = (data) => {
@@ -24,6 +26,7 @@ const Form = ({ handleAddUser }) => {
   console.log(getValues()) 
   return (
     <main>
+
       
      <h2>5% off on the first order</h2>
       <div className={classes.content}>
@@ -40,7 +43,9 @@ const Form = ({ handleAddUser }) => {
             minLength: { value: 4, message: 'Имя должно быть длинее 3 символов' },
             maxLength: { value: 10, message: 'Имя должно быть короче 10 символов' },
           })}
+
           className={classes.firstName} placeholder='     Name'
+
         />
       </label>
       <p style={{ color: 'red' }}>{errors.firstName?.message}</p>
@@ -55,7 +60,9 @@ const Form = ({ handleAddUser }) => {
               message: 'Введите пожалуйста немецкий номер',
             },
           })}
+
           className={classes.phoneNumber} placeholder='     Phone number'
+
         />
       </label>
       <p style={{ color: 'red' }}>{errors.phone?.message}</p>
@@ -70,6 +77,7 @@ const Form = ({ handleAddUser }) => {
               message: 'Неправильно введен имейл, добавьте точку и домен',
             },
           })}
+
           className={classes.email} placeholder='     Email'
         />
       </label>

@@ -1,11 +1,14 @@
+
 import React from "react";
 import classes from "./ErrorPage.module.css";
 import error from "./404.png";
 import { Link } from "react-router-dom";
 
+
 const ErrorPage = () => (
   <div className={classes.ErrorPage}>
     <div className={classes.ErrorPageHeader}>
+
       <img src={error} alt="problem" />
     </div>
     <div className={classes.errorTitel}>
@@ -22,6 +25,7 @@ const ErrorPage = () => (
           <p>Go Home</p>
         </button>
       </Link>
+
     </div>
 );
 

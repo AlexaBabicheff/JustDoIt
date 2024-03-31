@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import classes from "./OneProductComponent.module.css";
@@ -7,6 +8,7 @@ import { Link } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import Map from "../Map/Map";
 import ProductCounter from '../ProductCounter/ProductCounter';
+
 
 const OneProductComponent = () => {
   const [product, setProduct] = useState(null);
@@ -63,6 +65,8 @@ const OneProductComponent = () => {
       <div className={classes.OneProductContainer}>
         <div className={classes.OneProductsContainerHeader}>
           <div className={classes.OneProductImg}>
+<div className={classes.OneProductImg}>
+
             <img src={`${serverUrl}/${product.image}`} alt={product.title} />
           </div>
           <div className={classes.OneProductDescription}>

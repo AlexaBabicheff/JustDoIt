@@ -1,19 +1,23 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: none;
   font-family: Montserrat;
+
 }
 
 .saleContainer {
   display: flex;
   flex-direction: column;
+
   max-width: 100%;
   gap: 20px;
 }
 
 h7 {
   margin-left: 30px;
+
   font-weight: 700;
   font-size: 64px;
 }
@@ -90,6 +94,7 @@ button a {
   border-radius: 5px;
   z-index: 1;
 }
+
 .description {
   margin: 5px;
   /* padding-bottom: 80px; */

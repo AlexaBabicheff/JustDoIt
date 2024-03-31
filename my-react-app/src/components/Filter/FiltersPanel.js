@@ -44,3 +44,4 @@ const FiltersPanel = () => {
 };
 
 export default FiltersPanel;
+
