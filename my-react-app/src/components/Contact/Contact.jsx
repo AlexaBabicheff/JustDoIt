@@ -2,12 +2,14 @@ import React from 'react';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 import Section from "../Section/Section";
+
 import css from "./Contact.module.css";
 
 function Contact () {
   return (
     <>
     <Section>
+
       <div className={css.container}>
       <h5 className={css.title}>Contact</h5>
 

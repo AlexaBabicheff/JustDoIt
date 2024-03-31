@@ -6,7 +6,9 @@ import styles from '../HeaderBanner/Banner.module.css';
 const Banner = () => {
   return (
     <>
+
       <banner className={styles.pageBody}>
+
         <div className="text">
           <h1>
             Amazing Discounts

@@ -1,4 +1,5 @@
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,6 +38,17 @@ font-size: 82px;
 } */
 
 button {
+idth: 1100px;
+  font-size: 96px;
+  right: 30px;
+  }
+  
+  .btn_check_output {
+  display: flex;
+  padding-top: 140px;
+  }
+  
+  button {
   position: absolute;
   width: 220px;
   height: 50px;
@@ -51,6 +63,7 @@ button {
   border: none;
   background: rgb(147, 165, 77);
   z-index: 3;
+
   top: 370px;
   left: 30px;
 }

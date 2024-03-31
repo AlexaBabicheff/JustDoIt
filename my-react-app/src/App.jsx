@@ -1,7 +1,6 @@
-// здесь делаю адаптив
 
-import React from 'react';
 import './App.css';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import MainPage from './components/pages/MainPage/MainPage';
@@ -40,6 +39,7 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="*" element={<NotFound />} />
+
         </Routes>
       </Router>
     </div>

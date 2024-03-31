@@ -1,0 +1,11 @@
+.pageBody { 
+    margin: 100px;
+    padding: 50px;
+    width: '80%'; 
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+ }
+
+ 
