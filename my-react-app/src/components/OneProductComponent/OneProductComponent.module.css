@@ -1,0 +1,82 @@
+.OneProductContainer {
+  position: relative;
+}
+
+.OneProductsContainerHeader {
+  position: absolute;
+  display: flex;
+  margin: 50px;
+}
+.OneProductsContainerHeader  img {
+    left: 50px;
+    
+}
+.OneProductImg img {
+  width: 600px;
+  height: 400px;
+}
+.OneProductDescription {
+}
+
+.OneProductDescription img {
+  width: 600px;
+  height: 400px;
+}
+/* title */
+.OneProductDescription h2 {
+  left: 280px;
+  top: -30px;
+  color: rgb(45, 42, 42);
+  font-size: 36px;
+  font-weight: 700;
+}
+/* слово Description */
+.OneProductDescription h6 {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* описание товара */
+.OneProductDescription h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+/* price */
+.OneProductDescription h5 {
+  margin-top: 95px;
+}
+
+/* READ MORE */
+.OneProductDescription h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.OneProductDescription button {
+  /* position: absolute; */
+  width: 220px;
+  height: 50px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21px;
+  border-radius: 7px;
+  border: none;
+  background: rgb(147, 165, 77);
+  z-index: 3;
+  top: 180px;
+  left: 900px;
+}
+
+.iconAndTitle img{
+width: 50px;
+height: 50px;
+}

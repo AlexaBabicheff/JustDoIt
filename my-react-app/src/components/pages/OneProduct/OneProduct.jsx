@@ -1,14 +1,11 @@
 import React from 'react';
-import Navigation from '../../Navigation/Navigation';
-import Contact from '../../Contact/Contact';
-import Map from '../../Map/Map';
+
+import OneProductComponent from '../../OneProductComponent/OneProductComponent';
+import classes from './OneProduct.module.css';
 
 const OneProduct = () => (
-  <div className="pageBody">
-    <Navigation />
-    <p>One product which client has choose</p>
-    <Contact />
-    <Map />
+  <div className={classes.pageBody}>   
+    <OneProductComponent />
   </div>
 );
 

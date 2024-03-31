@@ -1,0 +1,92 @@
+.productsContainer {
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+   
+  }
+  
+  .allProductsCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 20px;
+    margin-top: 70px;
+  }
+
+  select{
+    margin-top: 50px;
+  }
+  .allProductsCardsContainer img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .allProductsCards {
+    /* color: #e51010; */
+    width: calc(20% - 20px); /*  ширина карточки для отображения 5 в ряд */
+    border: 1px solid #dad2d2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+  }
+  
+  .productImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    padding: 10px;
+  }
+  
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    /* white-space: nowrap;  */
+    /* overflow: hidden;  */
+    /* text-overflow: ellipsis; Добавляем многоточие */
+
+  }
+  
+  .priceInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .price {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .contact_map{
+    margin-left: -90px;
+  }
+
+  .productSort p{
+    font-weight: 300;
+    font-size: 14px;
+  }
+  @media (max-width: 1200px) {
+    .allProductsCards {
+      width: calc(25% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .allProductsCards {
+      width: calc(33.333% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .allProductsCards {
+      width: calc(50% - 20px);
+    }
+  }
