@@ -25,9 +25,9 @@ const Sale = () => {
     };
 
     return (
-        <div className={classes.saleContainer}>
+        <div className={classes.saleContainer__pageBody}>
                 <div className={classes.saleContainerHeader}>
-                    <div><p>Sale</p></div>
+                    <div><h7>Sale</h7></div>
                     <div className={classes.line}><hr /></div>
                     <div className={classes.saleButton}>
                     <button><a href='#'>All sales</a></button>

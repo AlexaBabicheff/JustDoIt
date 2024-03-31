@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.CategoryProductsContainerHeader{
+    margin: 90px;
+   
+}
+.CategoryProductsContainerHeader h1{
+    color: rgb(45, 42, 42);
+    font-size: 36px;
+    font-weight: 700;
+    top: 50px;
+    left: 60px;
+}
+.ProductsContainer{
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    align-items: center;
+margin-left: 60px;
+}
+
+.ProductsContainerCard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+.ProductCard{
+   
+}
+.ProductCard img{
+    width: 300px;
+    height: 300px;
+}
