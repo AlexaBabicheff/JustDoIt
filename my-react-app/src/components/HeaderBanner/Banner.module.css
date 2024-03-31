@@ -53,4 +53,5 @@ button {
   z-index: 3;
   top: 370px;
   left: 30px;
+  cursor: pointer;
 }

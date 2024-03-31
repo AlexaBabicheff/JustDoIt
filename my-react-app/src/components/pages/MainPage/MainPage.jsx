@@ -1,20 +1,22 @@
- import React from 'react';
- import Navigation from '../../Navigation/Navigation';
- import HeaderBanner from '../../HeaderBanner/Banner';
- import Categories from '../../Categories/Categories';
- import DiscountCard from '../../DiscountCard/Discount';
- import Form from '../../Form/Form';
- import Sale from '../../Sale/Sale';
- import Contact from '../../Contact/Contact';
- import Map from '../../Map/Map';
- 
+import React from "react";
+import Navigation from "../../Navigation/Navigation";
+import HeaderBanner from "../../HeaderBanner/Banner";
+import Categories from "../../Categories/Categories";
+import DiscountCard from "../../DiscountCard/Discount";
+import Form from "../../Form/Form";
+import Sale from "../../Sale/Sale";
+import Contact from "../../Contact/Contact";
+import Map from "../../Map/Map";
+import classes from "../MainPage/MainPage.module.css";
 
 const MainPage = () => (
   <div className="pageBody">
     <Navigation />
     <HeaderBanner />
     {/* <Categories /> */}
-    <Categories showAllCategories={false} />
+    <div className={classes.categoriesMainPage}>
+      <Categories showAllCategories={false} />
+    </div>
     <DiscountCard />
     <Form />
     <Sale />
@@ -22,5 +24,5 @@ const MainPage = () => (
     <Map />
   </div>
 );
-  
-export default MainPage
+
+export default MainPage;

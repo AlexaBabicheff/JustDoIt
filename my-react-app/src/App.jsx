@@ -20,6 +20,8 @@ import NotFound from './components/pages/NotFound/NotFound';
 import Categories from './components/Categories/Categories';
 import CategoryProducts from './components/CategoryProducts/CategoryProducts';
 import OneProductComponent from './components/OneProductComponent/OneProductComponent';
+import FiltersPanel from './components/Filter/FiltersPanel';
+import ProductCounter from './components/ProductCounter/ProductCounter';
 
 
 function App() {
@@ -30,12 +32,14 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/basket" element={<Basket />} />
           <Route path="/burger-menu" element={<BurgerMenu />} />
+          <Route path='/filters-panel' element={<FiltersPanel />} />
           <Route path="/categories-goods" element={<CategoriesGoods />} />
           <Route path="/categories-review" element={<CategoriesReview />} />
           <Route path="/all_sales" element={<AllSales />} />
           <Route path="/all_products" element={<AllProducts />} />
           <Route path="/one-product-component/:id" element={<OneProductComponent />} />
           <Route path="/one-product/:id" element={<OneProduct />} />
+          <Route path="/product-counter" element={<ProductCounter />} />
           <Route path="/categories/:categoryId" element={<CategoryProducts />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/favorites" element={<Favorites />} />
