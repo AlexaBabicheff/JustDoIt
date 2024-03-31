@@ -12,7 +12,7 @@ const HomePage = () => (
   <div className="pageBody">
     <Navigation />
     <HeaderBanner />
-    <Categories />
+    <Categories showAllCategories={false} />
     <DiscountCard />
     <Sale />
     <Form />

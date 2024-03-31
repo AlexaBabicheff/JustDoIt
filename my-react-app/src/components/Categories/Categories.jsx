@@ -33,7 +33,6 @@ const Categories = ({ showAllCategories }) => {
         )}
       </div>
       <div className={classes.categoriesCardsContainer}>
-
         {categories.slice(0, showAllCategories ? categories.length : 4).map((category) => (
 
           <Link key={category.id} to={`/categories/${category.id}`}>

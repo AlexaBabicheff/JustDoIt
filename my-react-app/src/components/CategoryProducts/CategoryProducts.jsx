@@ -1,31 +1,26 @@
-
-// export default CategoryProducts;
-
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import classes from "./CategoryProducts.module.css";
-import { serverUrl } from "../../Config";
+import classes from './CategoryProducts.module.css';
+import { serverUrl } from '../../Config';
 
 
 const CategoryProducts = () => {
   const { categoryId } = useParams();
   const [products, setProducts] = useState([]);
   const [categoryName, setCategoryName] = useState(null);
-
-
-  const categoryProductsURL = `${serverUrl}categories/${categoryId}`;
-
+  
+  const categoryProductsURL =`${serverUrl}categories/${categoryId}`; 
+  
   useEffect(() => {
     fetch(categoryProductsURL)
-
       .then((response) => response.json())
       .then((data) => {
         setProducts(data.data);
       })
       .catch((error) => console.error(error));
 
-
-    const categoriesAllURL = `${serverUrl}categories/all`;
+    const categoriesAllURL = `${serverUrl}categories/all`
+  
     fetch(categoriesAllURL)
       .then((response) => response.json())
       .then((data) => {
@@ -39,7 +34,7 @@ const CategoryProducts = () => {
       })
       .catch((error) => console.error(error));
   }, [categoryId]);
-
+  
   return (
     <div className={classes.CategoryProductsContainer}>
       <div className={classes.CategoryProductsContainerHeader}>

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import classes from './OneProductComponent.module.css';
@@ -30,6 +29,7 @@ const OneProductComponent = () => {
     return (
         <div className={classes.OneProductContainer}>
             <div className={classes.OneProductsContainerHeader}>
+
                 {/* <h1>{product.title}</h1> */}
                 
             <div className={classes.OneProductImg}>
