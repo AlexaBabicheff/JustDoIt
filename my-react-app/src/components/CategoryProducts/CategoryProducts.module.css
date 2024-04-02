@@ -1,36 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.CategoryProductsContainerHeader{
-    margin: 90px;
-   
+.CategoryProductsContainerHeader {
+  margin-left: 90px;
+  margin-top: 130px;
 }
-.CategoryProductsContainerHeader h1{
-    color: rgb(45, 42, 42);
-    font-size: 36px;
-    font-weight: 700;
-    top: 50px;
-    left: 60px;
+.CategoryProductsContainerHeader h1 {
+  color: rgb(45, 42, 42);
+  font-size: 36px;
+  font-weight: 700;
+  /* top: 50px; */
+  left: 60px;
+  padding-top: 100px;
 }
-.ProductsContainer{
-    display: flex;
-    width: 1200px;
-    flex-direction: row;
-    align-items: center;
-margin-left: 60px;
+.ProductsContainer {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 60px;
 }
 
-.ProductsContainerCard{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
+.ProductsContainerCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
 }
-.ProductCard{
-   
+.ProductCard {
 }
-.ProductCard img{
-    width: 300px;
-    height: 300px;
+.ProductCard img {
+  width: 300px;
+  height: 300px;
+}
+
+/* кнопки для переключения между страницами*/
+.btns_prod {
+  position: relative;
+  cursor: pointer;
+}
+.btns_prod button3 {
+  padding-top: 200px;
+  background-color: #fffff1;
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btns_prod button3:hover {
+  font-weight: 600;
+  color: #0e0101;
+  border: 1px solid rgb(24, 3, 3);
+}
+.btn_mainPage button3,
+.btn_categories button3{
+  border: 1px solid rgb(208, 203, 203);
+  font-weight: 500;
+  color: rgb(183, 177, 177);
+}
+.btn_mainPage button3 :hover,
+.btn_categories button3 :hover{
+  font-weight: 600;
+  color: rgb(19, 7, 7);
+}
+.btns_prod a {
+  color: rgb(183, 177, 177);
+}
+.btn_mainPage button3 {
+  margin-left: 55px;
+}
+.btn_categories button3 {
+  margin-left: 255px;
+  /* top: 100px; */
+}
+.btn_products button3 {
+  margin-left: 455px;
+  border: 1px solid rgb(26, 17, 17);
+  font-weight: 500;
+  color: rgb(30, 26, 26);
+}
+.line {
+  position: absolute;
+  top: 15px;
+}
+.line__MinePageToCategories hr,
+.line__CategoriesToProducts hr {
+  position: absolute;
+  top: 15px;
+}
+/* линии соединения кнопок-переключателей */
+hr {
+  width: 100px;
+}
+.line__MinePageToCategories hr {
+  left: 181px;
+}
+.line__CategoriesToProducts hr {
+  left: 380px;
+}
+.oneProduct_contactComponent {
+  padding-top: 500px;
 }

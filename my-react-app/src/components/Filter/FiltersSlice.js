@@ -1,3 +1,4 @@
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -24,4 +25,6 @@ const filtersSlice = createSlice({
 
 export const { setPriceRange, toggleDiscounted, setSorted } = filtersSlice.actions;
 
+
 export default filtersSlice.reducer;
+

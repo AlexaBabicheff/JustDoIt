@@ -10,11 +10,9 @@ header {
   position: relative;
   margin-top: 30px;
   margin-left: 110px;
-  /* margin: 30px 30px; */
   width: 1200px;
   height: 128px;
-  /* background: #fffff1; */
-}
+ }
 
 /* .header_logo {
 display: flex;
@@ -41,6 +39,7 @@ img {
 ul {
   top: 30px;
   padding-left: 140px;
+  text-decoration: none;
 }
 
 /* .active {
@@ -55,13 +54,14 @@ nav > ul {
   width: 950px;
   list-style-type: none;
   justify-content: space-evenly;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 li {
   padding: 34px 0 34px;
   font-size: 20px;
   font-weight: 500;
+  /* text-decoration: none */
 }
 
 .header__nav {
@@ -83,6 +83,7 @@ button1 {
   z-index: 3;
   left: 600px;
   padding: 5px;
+  cursor: pointer;
 }
 
 /* иконки */
@@ -91,9 +92,13 @@ button1 {
   display: flex;
   width: 300px;
   height: 70px;
+
 }
 
 .iconHeart {
   width: 50px;
   height: 30px;
-}
+  }
+  a { 
+    text-decoration: none;
+   } 

@@ -16,10 +16,10 @@ const AllSales = () => (
       </div>
       <div className="btns">
         <div className="main_page">
-          <button className="cat">Main Page</button>
+          <button>Main Page</button>
         </div>
         <div className="categories_page">
-          <button className="dog">All sales</button>
+          <button>All sales</button>
         </div>
       </div>
     <div className="sale_component">

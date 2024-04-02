@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import classes from './CategoryProducts.module.css';
-import { serverUrl } from '../../Config';
+
+import classes from "./CategoryProducts.module.css";
+import { serverUrl } from "../../Config";
+import Navigation from "../Navigation/Navigation";
 
 
 const CategoryProducts = () => {
@@ -36,6 +38,32 @@ const CategoryProducts = () => {
   }, [categoryId]);
   
   return (
+    <div className={classes.pageBody}>
+<Navigation />
+      <div className={classes.btns_prod}>
+        <div className={classes.btn_mainPage}>
+          <button3>
+            <Link to="/">Main Page</Link>
+          </button3>
+        </div>
+        <div className={classes.line__MinePageToCategories}>
+          <hr />
+        </div>
+        <div className={classes.btn_categories}>
+          <div className={classes.line__CategoriesToProducts}>
+            <hr />
+          </div>
+          <button3>
+            <Link to="/categories-review">Categories</Link>
+          </button3>
+        </div>
+        <div className={classes.btn_products}>
+          <button3>
+            <Link to="/categories/2">Products</Link>
+          </button3>
+        </div>
+      </div>
+      
     <div className={classes.CategoryProductsContainer}>
       <div className={classes.CategoryProductsContainerHeader}>
         {categoryName ? <h1>{categoryName}</h1> : <p>Loading...</p>}
@@ -56,6 +84,7 @@ const CategoryProducts = () => {
         </div>
 
       </div>
+    </div>
     </div>
   );
 };
