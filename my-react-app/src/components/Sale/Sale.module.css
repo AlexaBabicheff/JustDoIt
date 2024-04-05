@@ -13,7 +13,7 @@
 }
 
 h7 {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-weight: 700;
   font-size: 64px;
 }
@@ -54,7 +54,7 @@ button a {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 .saleCardsContainer {
   display: flex;
@@ -62,7 +62,7 @@ button a {
   justify-content: space-between;
   width: 1200px;
   height: 450px;
-  margin-left: 8%;
+  /* margin-left: 8%; */
 }
 .saleCard {
   width: 290px;
@@ -119,6 +119,7 @@ button a {
   color: #8b8b8b;
   position: relative;
   top: 5px;
+  text-decoration: line-through;
 }
 
 .dicountPrice::after {
@@ -127,7 +128,6 @@ button a {
   /* bottom: 55%; */
   left: 0;
   right: 0;
-  border-bottom: 1px solid #8b8b8b;
   transform: translateY(50%);
 }
 

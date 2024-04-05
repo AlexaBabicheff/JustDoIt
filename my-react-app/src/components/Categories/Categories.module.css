@@ -145,11 +145,9 @@ button a {
 }
 
 .categoriesContainer {
- display: flex;
+  display: flex;
   flex-direction: column;
-  /* max-width: 100%; */
   width: 1200px;
-  height: 1000px;
 }
 
 .categoriesContainerHeader p {
@@ -158,7 +156,7 @@ button a {
   font-size: 64px;
 }
 
-.line hr {
+/* .line hr {
   border: 1px solid #dddddd;
   width: 570px;
   margin-top: -30px;
@@ -188,37 +186,32 @@ button a {
 
 .categoriesButton button :hover {
   background-color: #1f1f1f;
-}
+} */
 
 .categoriesContainerHeader {
-  /* display: flex; */
   position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  /* margin-top: 30px; */
-  margin-left: 5%;
+  /* margin-left: 5%; */
   padding-bottom: 30px;
   width: 1200px;
 }
 
 .categoriesCardsContainer {
+  position: absolute;
   display: grid;
-  width: 100%;
+  width: 1200px;
   grid-template-columns: repeat(5, 1fr);
-  /* gap: 20px; */
   position: relative;
-  margin-left: 5%;
-  height: 500px;
-  /* justify-content:space-evenly; */
+  /* margin-left: 5%; */
+  gap: 5px;
 }
 
 .categoriesCard {
   width: 220px;
   height: 270px;
-  /* gap: 1px; */
   border-bottom: 1px solid #8b8b8b;
-  /* margin-bottom: 60px; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -236,6 +229,7 @@ button a {
 .title {
   font-weight: 500;
   font-size: 20px;
+  padding-top: 30px;
 }
 
 .categoriesCard img {
@@ -264,7 +258,6 @@ button a {
     left: 30px;
   }
   .categoriesCard {
-
     margin-bottom: 20px;
   }
   .categoriesCardsContainer {
@@ -276,4 +269,3 @@ button a {
     margin-left: 50px;
   }
 }
-

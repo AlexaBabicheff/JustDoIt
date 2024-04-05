@@ -1,3 +1,5 @@
+// page Categories
+
 // import Categories from "../../Categories/Categories";
 // import CategoriesLink from "../../CategoriesLink/CategoriesLink";
 // import Navigation from "../../Navigation/Navigation";

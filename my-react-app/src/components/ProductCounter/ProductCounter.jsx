@@ -18,7 +18,7 @@ const ProductCounter = () => {
     <div className={classes.pageBody}>
     <div className={classes.ProductCounterContainer}>
       <button4 onClick={decrement}>-</button4>
-      <input type="number" value={count} min="1" readOnly />
+      <input type="number" value={count} placeholder='1' min="1" readOnly />
       <button4 onClick={increment}>+</button4>
     </div>
     </div>

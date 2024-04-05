@@ -29,10 +29,10 @@
         background-color: rgb(255, 0, 0);
       }
       ul {
-        padding-left: 180px;
+        /* padding-left: 180px; */
       }
       nav > ul {
-        width: 750px;
+        /* width: 750px; */
       }
       /* Banner */
         banner {

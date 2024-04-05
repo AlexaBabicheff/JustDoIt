@@ -17,6 +17,8 @@ import BurgerMenu from './components/pages/BurgerMenu/BurgerMenu';
 import OneProduct from './components/pages/OneProduct/OneProduct';
 import NotFound from './components/pages/NotFound/NotFound';
 
+
+import ButtonsCategories from './components/ButtonsCategories/ButtonsCategories'
 import Categories from './components/Categories/Categories';
 import CategoryProducts from './components/CategoryProducts/CategoryProducts';
 import OneProductComponent from './components/OneProductComponent/OneProductComponent';
@@ -32,6 +34,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/basket" element={<Basket />} />
           <Route path="/burger-menu" element={<BurgerMenu />} />
+          <Route path="/buttons-categories" element={<ButtonsCategories />} />
           <Route path='/filters-panel' element={<FiltersPanel />} />
           <Route path="/categories-goods" element={<CategoriesGoods />} />
           <Route path="/categories-review" element={<CategoriesReview />} />

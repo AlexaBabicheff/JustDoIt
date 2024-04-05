@@ -84,12 +84,12 @@ const OneProductComponent = () => {
           </div>
         </div>
       </div>
-      <div className={classes.oneProduct_contactComponent}>
+      {/* <div className={classes.oneProduct_contactComponent}>
    <Contact />
    </div>
    <div className="map_component">
     <Map />
-    </div>
+    </div> */}
     </div>
 
     

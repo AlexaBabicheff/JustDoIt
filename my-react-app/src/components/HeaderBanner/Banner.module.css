@@ -9,7 +9,6 @@ banner {
   position: relative;
   width: 1360px;
   height: 700px;
-  left: 100px;
 }
 
 banner img {
@@ -30,12 +29,6 @@ h1 {
 font-size: 82px;
   right: 30px;
 }
-
-/* .btn_check_output {
-  display: flex;
-  padding-top: 140px;
-} */
-
 button {
   position: absolute;
   width: 220px;

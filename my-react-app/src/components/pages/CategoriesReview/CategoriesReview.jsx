@@ -1,3 +1,5 @@
+// page Categories
+
 // import Navigation from "../../Navigation/Navigation";
 // import Categories from "../../Categories/Categories";
 // import Section from "../../Section/Section";
@@ -49,6 +51,7 @@ import Map from "../../Map/Map";
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import classes from "./CategoriesReview.module.css";
+import ButtonsCategories from "../../ButtonsCategories/ButtonsCategories";
 // import Mind_map from "../../Min_map/Mind_map";
 
 const CategoriesReview = () => {
@@ -56,6 +59,7 @@ const CategoriesReview = () => {
     <div className="pageBody">
       <div className={classes.productsContainer}>
       <Navigation />
+      {/* <ButtonsCategories /> */}
       <Categories showAllCategories={true} />
       <div className={classes.contact_map}>
       <Contact />

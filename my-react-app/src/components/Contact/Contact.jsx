@@ -47,7 +47,8 @@ function Contact () {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h8>Linkstraße 2, 8 OG,     10785  Berlin, Deutschland</h8>
+              <h8>Linkstraße 2, 8 OG,10785 Berlin,</h8>
+              <h8> Deutschland</h8>
               </a>
           </div>
 

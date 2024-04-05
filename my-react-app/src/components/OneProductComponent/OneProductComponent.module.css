@@ -1,6 +1,6 @@
 .OneProductContainer {
   top: 50px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .OneProductsContainerHeader {
@@ -9,25 +9,26 @@
   margin: 50px;
 }
 .OneProductImg img {
-  width: 580px;
-  height: 400px;
+  width: 600px;
+  height: 450px;
 }
 
 .OneProductDescription {
-  width: 700px;
-  height: 400px;
+  width: 600px;
+  /* height: 400px; */
 }
 /* title */
 .OneProductDescription h2 {
-  left: 280px;
+  width: 600px;
+  padding-left: 20px;
   top: -30px;
   color: rgb(45, 42, 42);
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
 }
 /* слово Description */
 .OneProductDescription h6 {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 20px;
   font-weight: 600;
@@ -41,8 +42,9 @@
 }
 /* price */
 .OneProductDescription h5 {
-  margin-top: 95px;
+  margin-top: 75px;
   margin-left: 40px;
+  font-size: 50px;
 }
 
 /* READ MORE */
@@ -51,6 +53,9 @@
   font-weight: 500;
   margin-top: 5px;
   margin-left: 20px;
+}
+.check_out {
+  display: flex;
 }
 .OneProductDescription button {
   width: 220px;
@@ -65,9 +70,8 @@
   border-radius: 7px;
   border: none;
   background: rgb(147, 165, 77);
-  z-index: 3;
-  top: 180px;
-  left: 900px;
+  top: 145px;
+  margin-left: 840px;
 }
 .iconAndTitle img {
   width: 50px;
@@ -147,9 +151,7 @@ hr {
 .line__ProductsToOneProduct hr {
   left: 570px;
 }
-.oneProduct_contactComponent {
+/* .oneProduct_contactComponent {
   padding-top: 500px;
-}
-.check_out {
-  display: flex;
-}
+} */
+
