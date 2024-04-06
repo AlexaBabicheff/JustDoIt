@@ -54,7 +54,7 @@ const CategoriesGoods = () => {
   return (
     <div className="CategoriesGoodsContainer">
       <Navigation />
-      <FiltersPanel />
+      {/* <FiltersPanel /> */}
       {/* <CategoryProducts />
       <Section />
       <Map /> */}
