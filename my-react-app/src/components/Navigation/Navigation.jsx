@@ -72,16 +72,18 @@ const Navigation = () => {
             <li>
               <NavLink to="/all_sales">All sales</NavLink>
             </li>
-            {/* <li className="burger">☰</li> */}
-          </ul>
+           </ul>
+          {/* Бургер-меню */}
           <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
             {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
           </div>
         </nav>
         <div className="header_icons">
           <div className="iconHeart">
-            <img src={iconHeart} alt="Icon" />
-            <img src={iconBag} alt="Icon" />
+          <NavLink to="/favorites"><img src={iconHeart} alt="favorites" /></NavLink>
+            {/* корзина */}
+            <NavLink to="/basket"><img src={iconBag} alt="shopping_cart" /></NavLink>
+            {/* <img src={iconBag} alt="Icon" /> */}
           </div>
         </div>
       </div>

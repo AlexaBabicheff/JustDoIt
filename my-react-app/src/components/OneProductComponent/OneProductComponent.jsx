@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import Map from "../Map/Map";
 import ProductCounter from '../ProductCounter/ProductCounter';
+import { NavLink } from "react-router-dom";
 
 const OneProductComponent = () => {
   const [product, setProduct] = useState(null);
+  const [cart, setCart] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -55,6 +57,8 @@ const OneProductComponent = () => {
         <div className={classes.line__ProductsToOneProduct}>
           <hr />
         </div>
+        
+        {/* Добавление товара в корзину */}
         <div className={classes.btn_oneProduct}>
           <button2>One Product</button2>
         </div>
@@ -80,7 +84,7 @@ const OneProductComponent = () => {
             </a>
           </div>
           <div className={classes.like}>
-            <img src={iconHeart} alt="Icon" />
+          < NavLink to="/favorites"><img src={iconHeart} alt="favorites" /></NavLink>
           </div>
         </div>
       </div>

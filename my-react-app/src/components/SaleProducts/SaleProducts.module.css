@@ -25,6 +25,7 @@
   }
   
   .saleProductContainer {
+    /* position: relative; */
     display: flex;
     margin-top: 30px; 
     flex-wrap: wrap;
@@ -34,6 +35,7 @@
     /* margin-left: 8%; */
 }
   .saleProductCard {
+    position: relative;
     width: 290px;
     margin-bottom: 20px;
     border: 1px solid #dddddd;
@@ -51,6 +53,25 @@
     height: auto;
     border: 0px, 0px, 1px, 0px;
     border-radius: 10px;
+    z-index: 5;
+  }
+  .likedAndBasket{
+    /* position: absolute; */
+    top: 15px;
+  right: 5px;
+  z-index: 1;
+  }
+  .likedProduct1{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: 1;
+  }
+  .basketProduct1{
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    z-index: 1;
   }
   .discountPercent {
     margin-top: -270px;

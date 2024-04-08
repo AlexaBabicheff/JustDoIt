@@ -23,7 +23,7 @@ const AllSales = () => (
           <button>All sales</button>
         </div>
       </div>
-      <h5>All sales</h5>
+      <h5>Discounted items</h5>
       <SaleProducts />
 
       <div className="contact_componentSale">

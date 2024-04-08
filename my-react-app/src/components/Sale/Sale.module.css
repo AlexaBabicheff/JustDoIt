@@ -78,10 +78,28 @@ button a {
   height: auto;
   border: 0px, 0px, 1px, 0px;
 }
-.discountLabel {
+.likedProduct{
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  z-index: 1;
+}
+.basketProduct{
+  position: absolute;
+  top: 70px;
+  right: 5px;
+  z-index: 1;
+}
+/* .likedProduct img {
   position: absolute;
   top: 35px;
   right: 5px;
+  z-index: 1;
+} */
+.discountLabel {
+  position: absolute;
+  top: 15px;
+  left: 5px;
   max-width: 63px;
   height: auto;
   background-color: #f26d22;
