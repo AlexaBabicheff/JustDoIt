@@ -80,9 +80,14 @@ button a {
 }
 .likedProduct{
   position: absolute;
+  /* background-color: azure; */
   top: 15px;
   right: 5px;
   z-index: 1;
+}
+.likedProduct img{
+  background-color: azure;
+
 }
 .basketProduct{
   position: absolute;

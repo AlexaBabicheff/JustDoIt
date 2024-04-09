@@ -1,6 +1,6 @@
 .OneProductContainer {
   top: 50px;
-  /* max-width: 1200px; */
+  width: 1200px;
 }
 
 .OneProductsContainerHeader {
