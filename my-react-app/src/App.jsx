@@ -18,6 +18,8 @@ import OneProductComponent from './components/OneProductComponent/OneProductComp
 import FiltersPanel from './components/Filter/FiltersPanel';
 import ProductCounter from './components/ProductCounter/ProductCounter';
 import './App.css';
+import SortingFilteringPanel from './components/SortingFilteringPanel/containers/SortingFilteringPanel.jsx';
+import ProductsList from './components/SortingFilteringPanel/containers/ProductsList.jsx';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="*" element={<NotFound />} />
+          {/* <Route path="/sorting-filtering-panel" element={<SortingFilteringPanel />} /> */}
+          <Route path="/product-list" element={<ProductsList />} />
         </Routes>
       </Router>
     </div>
