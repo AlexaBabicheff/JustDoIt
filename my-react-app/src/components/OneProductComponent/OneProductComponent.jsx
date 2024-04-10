@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import { useParams } from 'react-router-dom';
+import {connect} from 'react-redux';
+import { addItem } from '../Cart/cart.actions';
 import classes from './OneProductComponent.module.css';
 import { serverUrl } from '../../Config';
-import iconHeart from '../Navigation/HeaderImg/heart.svg'
+import iconHeart from '../Navigation/HeaderImg/heart.svg';
 
-const OneProductComponent = () => {
+const OneProductComponent = ({ addItem }) => {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const oneProduct = `${serverUrl}products/${id}`
@@ -24,6 +28,7 @@ const OneProductComponent = () => {
         return <div>Loading...</div>;
     }
 
+
     console.log(product.data)
 
     return (
@@ -39,7 +44,7 @@ const OneProductComponent = () => {
                 <h2>{product.title}</h2>
                 <h5>$ {product.price}</h5>
                 <div className="check_out">
-            <button>Add to cart</button>
+                <button onClick={() => addItem(product)}>Add to cart</button>
           </div>
                 <h6>Description</h6>
                 <h3>{product.description}</h3>
@@ -54,5 +59,9 @@ const OneProductComponent = () => {
     );
 };
 
-export default OneProductComponent;
+const mapDispatchToProps = dispatch => ({
+    addItem: item => dispatch(addItem(item))
+  })
+
+export default connect(null, mapDispatchToProps)(OneProductComponent);
 
