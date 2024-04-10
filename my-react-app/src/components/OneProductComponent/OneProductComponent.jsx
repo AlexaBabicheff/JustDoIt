@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import classes from "./OneProductComponent.module.css";
 import { serverUrl } from "../../Config";
 import iconHeart from "../Navigation/HeaderImg/heart.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import Map from "../Map/Map";
 import ProductCounter from '../ProductCounter/ProductCounter';
@@ -35,7 +35,7 @@ const OneProductComponent = () => {
       <div className={classes.btns}>
         <div className={classes.btn_mainPage}>
           <button2>
-            <Link to="/">Main Page</Link>
+            <NavLink to="/">Main Page</NavLink>
           </button2>
         </div>
         <div className={classes.line__MinePageToCategories}>
@@ -46,12 +46,12 @@ const OneProductComponent = () => {
             <hr />
           </div>
           <button2>
-            <Link to="/categories-review">Categories</Link>
+            <NavLink to="/categories-review">Categories</NavLink>
           </button2>
         </div>
         <div className={classes.btn_products}>
           <button2>
-            <Link to="/categories/2">Products</Link>
+            <NavLink to="/categories/2">Products</NavLink>
           </button2>
         </div>
         <div className={classes.line__ProductsToOneProduct}>
@@ -74,7 +74,7 @@ const OneProductComponent = () => {
             <h5>$ {product.price}</h5>
             <div className="check_out">
             <ProductCounter />
-              <button>Add to cart</button>
+            <NavLink to="/basket"><button>Add to cart</button></NavLink>
             </div>
             <h6>Description</h6>
             <h3>{product.description}</h3>

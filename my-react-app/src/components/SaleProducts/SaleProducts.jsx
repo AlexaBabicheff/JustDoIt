@@ -8,10 +8,10 @@ import iconHeart from "../../components/Navigation/HeaderImg/heart.svg";
 import { NavLink } from "react-router-dom";
 
 
-const formatPrice = (price) => `${price.toFixed(2)}$`;
+// const formatPrice = (price) => `${price.toFixed(2)}$`;
 
-const calculateDiscountPercent = (originalPrice, discountPrice) =>
-  (((originalPrice - discountPrice) / originalPrice) * 100).toFixed(0);
+// const calculateDiscountPercent = (originalPrice, discountPrice) =>
+//   (((originalPrice - discountPrice) / originalPrice) * 100).toFixed(0);
 
 const SaleProducts = () => {
   const { all } = useParams();

@@ -50,8 +50,8 @@ import Navigation from "../../Navigation/Navigation";
 // import Map from "../../Map/Map";
 // import Mind_map from "../../Min_map/Mind_map";
 
-const CategoriesGoods = () => {
-  return (
+const CategoriesGoods = () => (
+  
     <div className="CategoriesGoodsContainer">
       <Navigation />
       {/* <FiltersPanel /> */}
@@ -60,6 +60,5 @@ const CategoriesGoods = () => {
       <Map /> */}
     </div>
   );
-};
 
 export default CategoriesGoods;
