@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './ProductCounter.module.css';
 
-const ProductCounter = ({ count, setCount }) => {
-  const handleInputChange = (e) => {
-      const newValue = e.target.value;
+const ProductCounter = () => {
+  const [count, setCount] = useState(0);
 
-      if (!isNaN(newValue) && newValue >= 0) {
-          setCount(parseInt(newValue)); 
-      }
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
   };
 
   return (
-      <div className={classes.ProductCounterContainer}>
-          <input
-              type="number"
-              value={count}
-              onChange={handleInputChange} 
-          />
-      </div>
+    <div className={classes.pageBody}>
+    <div className={classes.ProductCounterContainer}>
+      <button4 onClick={decrement}>-</button4>
+      <input type="number" value={count} min="1" readOnly />
+      <button4 onClick={increment}>+</button4>
+    </div>
+    </div>
+
   );
 };
 

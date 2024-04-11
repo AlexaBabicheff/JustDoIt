@@ -22,6 +22,7 @@ import SortingFilteringPanel from './components/SortingFilteringPanel/containers
 import ProductsList from './components/SortingFilteringPanel/containers/ProductsList.jsx';
 import Button from './components/Button/Button.component.jsx';
 
+
 function App() {
   return (
     <div className="container">
@@ -31,7 +32,7 @@ function App() {
           <Route path="/basket" element={<Basket />} />
           <Route path="/burger-menu" element={<BurgerMenu />} />
           <Route path='/filters-panel' element={<FiltersPanel />} />
-          <Route path="/categories-goods/:categoryId" element={<CategoriesGoods />} />
+          <Route path="/categories-goods" element={<CategoriesGoods />} />
           <Route path="/categories-review" element={<CategoriesReview />} />
           <Route path="/sale-goods" element={<AllSales />} />
           <Route path="/all-goods" element={<AllGoods />} />
