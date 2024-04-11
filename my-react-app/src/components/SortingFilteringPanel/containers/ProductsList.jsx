@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import List from '../components/List';
+import List from '../hooks/SortingFilteringHook';
 
 function mapStateToProps(state){
     const {products} = state;

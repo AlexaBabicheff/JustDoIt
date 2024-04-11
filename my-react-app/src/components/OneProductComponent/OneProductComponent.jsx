@@ -6,9 +6,24 @@ import { addItem } from '../Cart/cart.actions';
 import classes from './OneProductComponent.module.css';
 import { serverUrl } from '../../Config';
 import iconHeart from '../Navigation/HeaderImg/heart.svg';
+import Button from '../Button/Button.component.jsx';
+import ProductCounter from '../ProductCounter/ProductCounter.jsx';
+
 
 const OneProductComponent = ({ addItem }) => {
     const [product, setProduct] = useState(null);
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+        setCount(count + 1);
+    };
+
+    const decrement = () => {
+        if (count > 0) {
+            setCount(count - 1);
+        }
+    };
+
     const { id } = useParams();
     const navigate = useNavigate(); 
 
@@ -29,7 +44,13 @@ const OneProductComponent = ({ addItem }) => {
     }
 
 
-    console.log(product.data)
+    const handleAddToCart = () => {
+        if (count > 0) {
+            addItem({ ...product, quantity: count });
+            setCount(0); 
+        }
+    };
+
 
     return (
         <div className={classes.OneProductContainer}>
@@ -41,16 +62,26 @@ const OneProductComponent = ({ addItem }) => {
             <img src={`${serverUrl}/${product.image}`} alt={product.title} />
             </div>
             <div className={classes.OneProductDescription}>
-                <h2>{product.title}</h2>
-                <h5>$ {product.price}</h5>
-                <div className="check_out">
-                <button onClick={() => addItem(product)}>Add to cart</button>
-          </div>
-                <h6>Description</h6>
-                <h3>{product.description}</h3>
-                <link rel="stylesheet" href="" />
-                <a href=""><h4>Read more</h4></a>
-            </div>
+        <h2>{product.title}</h2>
+        <h5>$ {product.price}</h5>
+        <ProductCounter count={count} setCount={setCount} increment={increment} decrement={decrement} /> 
+        <div className="manualInput">
+    <input 
+        type="number"
+        value={count}
+        onChange={(e) => {
+            const newValue = parseInt(e.target.value);
+            setCount(newValue >= 0 ? newValue : 0); // 
+        }}
+    />
+</div>
+        <div className="check_out">
+            <Button onClick={handleAddToCart}>Add to cart</Button>
+        </div>
+        <h6>Description</h6>
+        <h3>{product.description}</h3>
+        <a href="#"><h4>Read more</h4></a>
+    </div>
             <div className={classes.like}>
             <img src={iconHeart} alt="Icon" />
             </div>

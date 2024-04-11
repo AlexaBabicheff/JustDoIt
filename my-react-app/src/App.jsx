@@ -20,6 +20,7 @@ import ProductCounter from './components/ProductCounter/ProductCounter';
 import './App.css';
 import SortingFilteringPanel from './components/SortingFilteringPanel/containers/SortingFilteringPanel.jsx';
 import ProductsList from './components/SortingFilteringPanel/containers/ProductsList.jsx';
+import Button from './components/Button/Button.component.jsx';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           {/* <Route path="/sorting-filtering-panel" element={<SortingFilteringPanel />} /> */}
           <Route path="/product-list" element={<ProductsList />} />
+          <Route path="/button" element={<Button />} />
         </Routes>
       </Router>
     </div>

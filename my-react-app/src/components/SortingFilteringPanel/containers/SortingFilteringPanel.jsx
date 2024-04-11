@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { setCheckboxValue } from '../actions';
-import List from '../components/List';
+import List from '../hooks/SortingFilteringHook';
 
 const SortingFilteringPanel = () => {
     const [filteredData, setFilteredData] = useState([]);
