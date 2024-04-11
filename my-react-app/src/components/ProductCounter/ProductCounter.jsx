@@ -22,6 +22,7 @@ const ProductCounter = () => {
       <button4 onClick={increment}>+</button4>
     </div>
     </div>
+
   );
 };
 

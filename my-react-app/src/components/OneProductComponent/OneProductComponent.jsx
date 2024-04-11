@@ -1,103 +1,97 @@
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; 
+import { useParams } from 'react-router-dom';
+import {connect} from 'react-redux';
+import { addItem } from '../Cart/cart.actions';
+import classes from './OneProductComponent.module.css';
+import { serverUrl } from '../../Config';
+import iconHeart from '../Navigation/HeaderImg/heart.svg';
+import Button from '../Button/Button.component.jsx';
+import ProductCounter from '../ProductCounter/ProductCounter.jsx';
 
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import classes from "./OneProductComponent.module.css";
-import { serverUrl } from "../../Config";
-import iconHeart from "../Navigation/HeaderImg/heart.svg";
-import { Link } from "react-router-dom";
-import Contact from "../Contact/Contact";
-import Map from "../Map/Map";
-import ProductCounter from '../ProductCounter/ProductCounter';
+
+const OneProductComponent = ({ addItem }) => {
+    const [product, setProduct] = useState(null);
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+        setCount(count + 1);
+    };
+
+    const decrement = () => {
+        if (count > 0) {
+            setCount(count - 1);
+        }
+    };
+
+    const { id } = useParams();
+    const navigate = useNavigate(); 
+
+    useEffect(() => {
+        const oneProduct = `${serverUrl}products/${id}`
+        console.log(oneProduct);
+        fetch(oneProduct)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                setProduct(data[0]);
+            }) 
+            .catch((error) => console.error(error));
+    }, [id]);
+
+    if (!product) {
+        return <div>Loading...</div>;
+    }
 
 
-const OneProductComponent = () => {
-  const [product, setProduct] = useState(null);
-  const { id } = useParams();
+    const handleAddToCart = () => {
+        if (count > 0) {
+            addItem({ ...product, quantity: count });
+            setCount(0); 
+        }
+    };
 
-  useEffect(() => {
-    const oneProduct = `${serverUrl}products/${id}`;
-    console.log(oneProduct);
-    fetch(oneProduct)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setProduct(data[0]);
-      })
-      .catch((error) => console.error(error));
-  }, [id]);
 
-  if (!product) {
-    return <div>Loading...</div>;
-  }
-  console.log(product.data);
-  return (
-    <div className={classes.pageBody}>
-      <div className={classes.btns}>
-        <div className={classes.btn_mainPage}>
-          <button2>
-            <Link to="/">Main Page</Link>
-          </button2>
-        </div>
-        <div className={classes.line__MinePageToCategories}>
-          <hr />
-        </div>
-        <div className={classes.btn_categories}>
-          <div className={classes.line__CategoriesToProducts}>
-            <hr />
-          </div>
-          <button2>
-            <Link to="/categories-review">Categories</Link>
-          </button2>
-        </div>
-        <div className={classes.btn_products}>
-          <button2>
-            <Link to="/categories/2">Products</Link>
-          </button2>
-        </div>
-        <div className={classes.line__ProductsToOneProduct}>
-          <hr />
-        </div>
-        <div className={classes.btn_oneProduct}>
-          <button2>One Product</button2>
-        </div>
-      </div>
-      
-      <div className={classes.OneProductContainer}>
-        <div className={classes.OneProductsContainerHeader}>
-          <div className={classes.OneProductImg}>
-<div className={classes.OneProductImg}>
+    return (
+        <div className={classes.OneProductContainer}>
+            <div className={classes.OneProductsContainerHeader}>
 
+                {/* <h1>{product.title}</h1> */}
+                
+            <div className={classes.OneProductImg}>
             <img src={`${serverUrl}/${product.image}`} alt={product.title} />
-          </div>
-          <div className={classes.OneProductDescription}>
-            <h2>{product.title}</h2>
-            <h5>$ {product.price}</h5>
-            <div className="check_out">
-            <ProductCounter />
-              <button>Add to cart</button>
             </div>
-            <h6>Description</h6>
-            <h3>{product.description}</h3>
-            <link rel="stylesheet" href="" />
-            <a href="">
-              <h4>Read more</h4>
-            </a>
-          </div>
-          <div className={classes.like}>
-            <img src={iconHeart} alt="Icon" />
-          </div>
+            <div className={classes.OneProductDescription}>
+        <h2>{product.title}</h2>
+        <h5>$ {product.price}</h5>
+        <ProductCounter count={count} setCount={setCount} increment={increment} decrement={decrement} /> 
+        <div className="manualInput">
+    <input 
+        type="number"
+        value={count}
+        onChange={(e) => {
+            const newValue = parseInt(e.target.value);
+            setCount(newValue >= 0 ? newValue : 0); // 
+        }}
+    />
+</div>
+        <div className="check_out">
+            <Button onClick={handleAddToCart}>Add to cart</Button>
         </div>
-      </div>
-      <div className={classes.oneProduct_contactComponent}>
-   <Contact />
-   </div>
-   <div className="map_component">
-    <Map />
+        <h6>Description</h6>
+        <h3>{product.description}</h3>
+        <a href="#"><h4>Read more</h4></a>
     </div>
-    </div>
-
-    
-  );
+            <div className={classes.like}>
+            <img src={iconHeart} alt="Icon" />
+            </div>
+            </div>
+        </div>
+    );
 };
 
-export default OneProductComponent;
+const mapDispatchToProps = dispatch => ({
+    addItem: item => dispatch(addItem(item))
+  })
+
+export default connect(null, mapDispatchToProps)(OneProductComponent);
